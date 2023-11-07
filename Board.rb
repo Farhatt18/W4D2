@@ -7,6 +7,11 @@ class Board
 
     end
 
+    def populate_piece(pos)
+        
+        
+    end
+
     def [](pos)
         row, col = pos
         @rows[row][col]
