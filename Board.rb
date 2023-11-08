@@ -10,11 +10,6 @@ class Board
         @rows[7].map! {|el| el = Piece.new}
     end
 
-    def populate_piece(pos)
-        
-        
-    end
-
     def [](pos)
         row, col = pos
         @rows[row][col]
