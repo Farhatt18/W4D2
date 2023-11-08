@@ -35,7 +35,6 @@ class Board
         else
             raise "not valid"
         end
-
         self[start_pos] = nil 
     end
 
