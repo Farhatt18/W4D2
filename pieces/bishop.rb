@@ -5,11 +5,11 @@ class Bishop < Piece
     include Slideable
 
     def symbol
-
-    end
+        '♝'.colorize(color)
+      end
 
     def move_dirs
-
+        diagonal_dirs
     end
 
 

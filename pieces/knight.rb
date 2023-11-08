@@ -1,22 +1,23 @@
 require_relative 'piece'
 require_relative 'stepable'
 
-class Knight
+class Knight <  piece
     include Slideable
 
-    MOVES = [
+    
+    
+    def symbol
+        "♞".colorize(color)
+    end
+
+    def move_diffs
+        moves = [
         [2,1], [2,-1], 
         [-2,1], [-2,-1], 
         [1,2], [-1,2], 
         [1,-2],[-1,-2]
-    ]
-    
-    def symbol
-
-    end
-
-    def move_dirs
-
+    ].freeze
+    return moves
     end
 
 end
